@@ -1,13 +1,22 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TIleDestroy : MonoBehaviour
 {
+
+    public bool isGrounded;
     // Start is called before the first frame update
-    void Start()
-    {
+
+    private void Awake()
+    {   
         
+    }
+
+    private void Start()
+    {
+        isGrounded = true;
     }
 
     // Update is called once per frame
@@ -20,4 +29,7 @@ public class TIleDestroy : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+
+  
 }
